@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg:rgb(47, 239, 47);
+    --text:white;
+    --dimgreen: rgb(4, 132, 4);
+    --black:#000000;
+    --bc:#01110E;
+    --lightgreen: rgb(140, 250, 250);
+    
+}
+
+
+.nav{
+   width: 100%;
+   height: 30%;
+   display: flex;
+   padding: 10px 2%;
+   text-align: center;
+   justify-content: space-between;
+   position: relative;
+   top: 5%;
+   background-color:var(--bc);   
+}
+
+.nav-item{
+    display: flex;
+    gap: 35px;
+    text-align: center;
+    list-style: none;
+}
+.nav-item li a{
+    position: sticky;
+    top: 5%;
+    text-align: center;
+    color: var(--text);
+    font-size: 12px;
+    font-weight:600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: var(--text);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.btn{
+    background-color: var(--dimgreen);
+    color: var(--text);
+    width:150px;
+    height: 45px; 
+    border: 1px solid var(--dimgreen);
+    border-radius: 5px;
+    font-size: 13px;
+    text-transform: capitalize;  
+}
+.hero{
+    width:100%;
+    padding: 15px 5%; 
+    padding-block: 70px;
+    float: start;
+    background-image: url(image/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+span{
+    text-align: start;
+    margin: 15px;
+    text-transform: uppercase;
+    color: var(--dimgreen);
+    font-weight: 700;
+    font-size: 13px;
+    
+}
+h1{
+    color: var(--text);
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 1%
+}
+.main-span{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--dimgreen);
+}
+p{
+   text-align:justify;
+   color: var(--text);
+   padding-block: 25px; 
+   padding-left: 1%;
+}
+.btn-main{
+    background-color: transparent;
+    color: var(--text);
+    width:150px;
+    height: 45px; 
+    border: 1px solid var(--dimgreen);
+    border-radius: 5px;
+    font-size: 13px;
+    text-transform: capitalize;  
+}
+.services{
+    background-color: var(--text);
+}
+
+
+/*------services*/
+.services{
+    width: 100%;
+    padding-block: 10%;
+}
+.service-text h5{
+    color: var(--dimgreen);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+.service-text h1{
+    color: var(--dimgreen);
+    text-align: center;
+    text-transform: capitalize;
+}
+.service-text p{
+    text-align: center;
+    color: var(--dimgreen);
+}
+
+.services-main {
+    width: 90%;
+    margin: 40px auto;   
+}
+.services-main img{
+    width:35px;
+    height: 35px;
+}
+.img-bg{
+    width: 50px;
+    height: auto;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: var(--lightgreen);
+}
+.services-main h3{
+    color: var(--black);
+    font-weight: 600;
+    padding-top: 12%;
+    text-transform: capitalize;
+}
+.services-main p{
+    color: var(--black);
+    text-align: justify;
+}
+.services-btn {
+    color: var(--dimgreen);
+    font-size: 13px;
+    text-transform: capitalize; 
+    text-decoration: none;
+}
+.services-btn:hover{
+    color: var(--black);
+}
+/*----footer----*/
+footer{
+    background: var(--bc);
+    color: var(--text);
+    padding: 10px;
+    padding-block: 10%;
+}
+.socials{
+    display: flex;
+    gap: 8px;
+    padding-top: 20px;
+}
+.logo h3{
+    font-size: 14px;
+    color: var(--text);
+    padding-top: 20px;
+}
+.socials img{
+    width: 25px;
+    height:25px;
+}
+.links h4{
+    font-size: 18px;
+    text-align: center;
+}
+.links img{
+    width: 15px;
+    height: 15px;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+  
+
+    .nav-item {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #00271c;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 30px 0;
+        z-index: 1000;
+    }
+
+    .nav-item.active {
+        display: flex;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+    .hero{
+        padding-block: 0;
+    }
+}
+
